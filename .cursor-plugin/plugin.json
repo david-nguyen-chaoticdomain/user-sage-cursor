@@ -1,0 +1,34 @@
+{
+  "name": "user-sage",
+  "displayName": "User Sage",
+  "version": "1.0.0",
+  "description": "Build and run UX research studies from chat: surveys, tree tests, card sorts, preference tests, AI Panel, and Your Panel / GenPop recruitment via User Sage's hosted MCP.",
+  "author": {
+    "name": "User Sage",
+    "email": "hello@usersage.com"
+  },
+  "homepage": "https://usersage.com",
+  "repository": "https://github.com/david-nguyen-chaoticdomain/user-sage-cursor",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "ux-research",
+    "user-research",
+    "survey",
+    "usability",
+    "ai-panel",
+    "user-sage"
+  ],
+  "logo": "assets/logo.svg",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "USERSAGE_API_KEY": {
+        "type": "string",
+        "title": "User Sage MCP API key",
+        "description": "Create a key in User Sage → Settings → MCP connector (Pro). Starts with usg_live_."
+      }
+    },
+    "required": ["USERSAGE_API_KEY"]
+  }
+}

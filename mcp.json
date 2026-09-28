@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "user-sage": {
+      "type": "http",
+      "url": "https://mcp.usersage.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${USERSAGE_API_KEY}"
+      }
+    }
+  }
+}
