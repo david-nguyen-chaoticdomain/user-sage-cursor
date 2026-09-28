@@ -2,9 +2,9 @@
 name: user-sage-mcp
 description: >-
   Use when the user wants to create, inspect, or recruit for a User Sage UX
-  research study from chat (survey, tree test, card sort, preference / five-second
-  test, AI Panel, Your Panel, or GenPop). Prefer the User Sage MCP tools over
-  guessing study structure.
+  research study from chat (survey, tree test, card sort, preference test,
+  first-click test, five-second test, prototype test, AI Panel, Your Panel, or
+  GenPop). Prefer the User Sage MCP tools over guessing study structure.
 ---
 
 # User Sage MCP
@@ -27,7 +27,7 @@ Read:
 - `get_recruitment_options` — which recruitment paths are available for a study
 
 Write / run:
-- `create_study` — persist a real study (survey and other methods)
+- `create_study` — persist a real study (survey, tree test, card sort, preference, first-click, five-second, or prototype test)
 - `duplicate_study` — draft clone
 - `start_your_panel_recruitment` — shareable Your Panel link
 - `run_ai_panel` — spend credits; synthetic panel
