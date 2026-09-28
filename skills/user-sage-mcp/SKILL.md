@@ -12,7 +12,7 @@ description: >-
 ## Setup
 
 1. User needs a Pro workspace on [app.usersage.com](https://app.usersage.com).
-2. Settings → MCP connector → Generate key (`usg_live_…`). Shown once; store it.
+2. Workspace Settings → Integrations → MCP Connector → Generate key (`usg_live_…`). Shown once; store it.
 3. Install this plugin and paste the key into `USERSAGE_API_KEY`.
 
 Remote endpoint: `https://mcp.usersage.com/mcp` (Bearer token). No local process.

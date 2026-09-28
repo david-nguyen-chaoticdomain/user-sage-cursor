@@ -5,7 +5,7 @@ Cursor Marketplace package for the hosted User Sage MCP connector.
 Create and run UX research from chat: surveys, tree tests, card sorts, preference tests, first-click tests, five-second tests, and prototype tests. Recruit with Your Panel, AI Panel, or GenPop through User Sage's hosted MCP.
 
 - **MCP URL:** `https://mcp.usersage.com/mcp`
-- **Auth:** Bearer API key (`usg_live_…`) from User Sage → Settings → MCP connector (Pro)
+- **Auth:** Bearer API key (`usg_live_…`) from User Sage → Workspace Settings → Integrations → MCP Connector (Pro)
 - **Transport:** remote Streamable HTTP (no local `npx` / CLI)
 
 ## Install (once listed)

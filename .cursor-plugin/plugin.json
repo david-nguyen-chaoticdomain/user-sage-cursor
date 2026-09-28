@@ -31,7 +31,7 @@
       "USERSAGE_API_KEY": {
         "type": "string",
         "title": "User Sage MCP API key",
-        "description": "Create a key in User Sage \u2192 Settings \u2192 MCP connector (Pro). Starts with usg_live_."
+        "description": "Create a key in User Sage \u2192 Workspace Settings \u2192 Integrations \u2192 MCP Connector (Pro). Starts with usg_live_."
       }
     },
     "required": [
