@@ -1,8 +1,8 @@
 {
   "name": "user-sage",
   "displayName": "User Sage",
-  "version": "1.0.1",
-  "description": "Build and run UX research studies from chat: surveys, tree tests, card sorts, preference tests, first-click tests, five-second tests, and prototype tests, plus AI Panel and Your Panel / GenPop recruitment via User Sage's hosted MCP.",
+  "version": "1.1.0",
+  "description": "Plan and run UX research from chat: plan a study from a research question, build surveys, tree tests, card sorts, preference tests, first-click tests, five-second tests, and prototype tests, plus AI Panel and Your Panel / GenPop recruitment, and Projects, personas and AI panels, via User Sage's hosted MCP. Free can plan studies and list Briefs; Pro adds the rest.",
   "author": {
     "name": "User Sage",
     "email": "hello@usersage.com"
@@ -22,7 +22,9 @@
     "five-second-test",
     "prototype-test",
     "card-sort",
-    "tree-test"
+    "tree-test",
+    "planning",
+    "briefs"
   ],
   "logo": "assets/logo.svg",
   "variables": {
@@ -31,7 +33,7 @@
       "USERSAGE_API_KEY": {
         "type": "string",
         "title": "User Sage MCP API key",
-        "description": "Create a key in User Sage \u2192 Workspace Settings \u2192 Integrations \u2192 MCP Connector (Pro). Starts with usg_live_."
+        "description": "Create a key in User Sage \u2192 Workspace Settings \u2192 Integrations \u2192 MCP Connector (any plan). Starts with usg_live_."
       }
     },
     "required": [
