@@ -40,7 +40,7 @@ Manual MCP (without the plugin):
 
 ## Publish checklist
 
-1. Public packaging repo: [`david-nguyen-chaoticdomain/user-sage-cursor`](https://github.com/david-nguyen-chaoticdomain/user-sage-cursor) (this `cursor-plugin/` tree is the repo root). Do **not** use `user-sage-mcp` for the public GitHub name: that name is reserved for the private MCP / Vercel project (`user-sage-backend/apps/mcp`).
+1. Public packaging repo: [`user-sage/user-sage-cursor`](https://github.com/user-sage/user-sage-cursor) (this `cursor-plugin/` tree is the repo root). Do **not** use `user-sage-mcp` for the public GitHub name: that name is reserved for the private MCP / Vercel project (`user-sage-backend/apps/mcp`).
 2. Confirm `https://mcp.usersage.com/mcp` is healthy (not maintenance).
 3. Submit the repo at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish).
 4. Keep Grok Bot template work separate: connector first.
@@ -51,8 +51,8 @@ Manual MCP (without the plugin):
 2. **The cursor.directory listing does not sync from this repo.** It keeps its own copy of the description, keywords and both components. Open the listing's Edit Plugin form and update it by hand: the Description, the Keywords, and the skill component's Description and Content (copy `skills/user-sage-mcp/SKILL.md` from the line `# User Sage MCP` down, without the `---` header block at the top). The MCP component only changes if `mcp.json` does. Then press Update Plugin.
 3. If the plugin is also listed in the official Cursor Marketplace, re-submit it or bump its version at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish).
 
-## Tools (server `user-sage`, 19)
+## Tools (server `user-sage`, 20)
 
 Free and Pro: `plan_study`, `list_briefs`
 
-Pro: `list_studies`, `get_study`, `get_study_findings`, `get_study_responses`, `create_study`, `duplicate_study`, `get_recruitment_options`, `start_your_panel_recruitment`, `run_ai_panel`, `launch_genpop_recruitment`, `list_projects`, `list_personas`, `get_persona`, `create_persona`, `list_panels`, `get_panel`, `create_panel`
+Pro: `list_studies`, `get_study`, `get_study_findings`, `get_study_responses`, `create_study`, `duplicate_study`, `get_recruitment_options`, `start_your_panel_recruitment`, `run_ai_panel`, `launch_genpop_recruitment`, `list_projects`, `get_project`, `list_personas`, `get_persona`, `create_persona`, `list_panels`, `get_panel`, `create_panel`

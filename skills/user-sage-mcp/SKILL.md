@@ -32,21 +32,21 @@ Plan (every plan):
 - `list_briefs`: the workspace's Briefs, newest first, each with a `briefUrl`. Never shows a Brief's contents: the link is the way in.
 
 Read (Pro):
-- `list_studies`: workspace study index
-- `get_study`: full config and raw results (large; prefer findings or responses)
+- `list_studies`: workspace study index, newest activity first. Pass `search` to find a study by part of its name. It is paged: while `hasMore` is true, call again with `offset` set to `nextOffset`, and do not say you have seen every study until `hasMore` is false
+- `get_study`: full config and raw results (large; prefer findings or responses). Also `incentive`: null, or the offer with counts of people Pending, Given and Not given
 - `get_study_findings`: takeaway and aggregates
 - `get_study_responses`: paged individual responses
-- `get_recruitment_options`: which recruitment paths are available for a study
+- `get_recruitment_options`: which recruitment paths are available for a study, and the incentive types Your Panel can offer (`yourPanel.incentiveTypes`) with the study's current offer
 
 Write and run (Pro):
 - `create_study`: persist a real study (survey, tree test, card sort, preference, first-click, five-second, or prototype test)
 - `duplicate_study`: draft clone
-- `start_your_panel_recruitment`: shareable Your Panel link
+- `start_your_panel_recruitment`: shareable Your Panel link. Optional `incentive` (`type` from `get_recruitment_options`, `valueCents`, `currency`, a private `note`) records what you are offering people for their time
 - `run_ai_panel`: spends credits; a panel of simulated people takes the study
 - `launch_genpop_recruitment`: real paid participants; confirm with the researcher first
 
 Projects, personas and AI panels (Pro):
-- `list_projects`: Projects with a `projectUrl`; a Project id is `project_id` on `plan_study` and `list_briefs`
+- `list_projects`, `get_project`: Projects with a `projectUrl`; a Project id is `project_id` on `plan_study` and `list_briefs`. `get_project` reads one Project in full: its findings, a rollup of its studies and Briefs, and links
 - `list_personas`, `get_persona`: the personas available, then one in full (goals, pain points, behaviors, five trait scores)
 - `create_persona`: saves a persona you drafted; behavioral, never demographic; free
 - `list_panels`, `get_panel`: AI panels, then one with its simulated people
@@ -62,6 +62,7 @@ Projects, personas and AI panels (Pro):
 - Prefer `get_study_findings` over `get_study` for "what did we learn?"
 - Keep AI Panel results (simulated people, a hypothesis) and real-participant results separate, and say which is which.
 - For spendy actions (`run_ai_panel`, `launch_genpop_recruitment`), confirm the researcher wants to spend credits or funds before calling.
+- An incentive is only a record of the offer. People are never told what it is; on an open link they are asked for an email at the end so the team can reach them. The researcher hands it out and marks people Given in the app, never from chat. Confirm the type and amount with the researcher before setting one.
 - Confirm before `create_persona` or `create_panel`. Existing studies, personas and panels cannot be edited or deleted through this connector; send the researcher to the app.
 - After `create_study`, give them the builder, preview and results URLs from the tool result.
 - If a tool named here is missing, the client cached an older tool list: reconnect the User Sage MCP server or start a new chat.
