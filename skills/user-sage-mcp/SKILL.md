@@ -3,9 +3,10 @@ name: user-sage-mcp
 description: >-
   Use when the user wants to plan, create, inspect, or recruit for a User Sage
   UX research study from chat (survey, tree test, card sort, preference test,
-  first-click test, five-second test, prototype test, AI Panel, Your Panel, or
-  GenPop), or work with their Briefs, Projects, personas, or AI panels. Prefer
-  the User Sage MCP tools over guessing study structure.
+  first-click test, five-second test, prototype test, AI Panel, Your Panel,
+  an incentive for Your Panel, or GenPop), or work with their Briefs, Projects,
+  personas, or AI panels. Prefer the User Sage MCP tools over guessing study
+  structure.
 ---
 
 # User Sage MCP
@@ -62,7 +63,7 @@ Projects, personas and AI panels (Pro):
 - Prefer `get_study_findings` over `get_study` for "what did we learn?"
 - Keep AI Panel results (simulated people, a hypothesis) and real-participant results separate, and say which is which.
 - For spendy actions (`run_ai_panel`, `launch_genpop_recruitment`), confirm the researcher wants to spend credits or funds before calling.
-- An incentive is only a record of the offer. People are never told what it is; on an open link they are asked for an email at the end so the team can reach them. The researcher hands it out and marks people Given in the app, never from chat. Confirm the type and amount with the researcher before setting one.
+- An incentive is only a record of the offer. People are never told what it is; on an open link they are asked for an email at the end so the team can reach them. The researcher hands it out and marks people Given in the app, never from chat. Confirm the type and amount with the researcher before setting one. If `get_study` shows `emailsNotConfirmed`, relay its `emailGuidance`: emails typed on an open link may not be the person's own until they confirm, so do not tell the researcher it is safe to send incentives to them yet.
 - Confirm before `create_persona` or `create_panel`. Existing studies, personas and panels cannot be edited or deleted through this connector; send the researcher to the app.
 - After `create_study`, give them the builder, preview and results URLs from the tool result.
 - If a tool named here is missing, the client cached an older tool list: reconnect the User Sage MCP server or start a new chat.
