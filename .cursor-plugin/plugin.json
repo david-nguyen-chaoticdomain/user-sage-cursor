@@ -1,8 +1,8 @@
 {
   "name": "user-sage",
   "displayName": "User Sage",
-  "version": "1.2.0",
-  "description": "Plan and run UX research from chat: plan a study from a research question, build surveys, tree tests, card sorts, preference tests, first-click tests, five-second tests, and prototype tests, plus AI Panel and Your Panel / GenPop recruitment, and Projects, personas and AI panels, via User Sage's hosted MCP. Free can plan studies and list Briefs; Pro adds the rest.",
+  "version": "1.2.1",
+  "description": "Plan and run UX research from chat: plan a study from a research question, build surveys, tree tests, card sorts, preference tests, first-click tests, five-second tests, and prototype tests, plus AI Panel and Your Panel / GenPop recruitment, incentives for Your Panel studies, and Projects, personas and AI panels, via User Sage's hosted MCP. Free can plan studies and list Briefs; Pro adds the rest.",
   "author": {
     "name": "User Sage",
     "email": "hello@usersage.com"
@@ -24,7 +24,8 @@
     "card-sort",
     "tree-test",
     "planning",
-    "briefs"
+    "briefs",
+    "incentives"
   ],
   "logo": "assets/logo.svg",
   "variables": {
